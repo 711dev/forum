@@ -205,6 +205,7 @@ class db_driver_mysql
 	}
 
 	function version() {
+		return '9.9.9';
 		if(empty($this->version)) {
 			$this->version = mysql_get_server_info($this->curlink);
 		}
